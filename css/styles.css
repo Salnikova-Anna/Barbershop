@@ -556,7 +556,7 @@ body {
   padding: 12px 20px;
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33px;
+  line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
@@ -682,6 +682,7 @@ body {
   .serv-pric-item-camouflage::after {
     margin-left: 12px;
   }
+
   .serv-pric-item-haircut::after {
     width: 358px;
   }
@@ -733,6 +734,10 @@ body {
     background-image: none;
   }
 
+  .serv-pric-list {
+    padding: 30px 20px;
+  }
+
   .serv-pric-list:first-child {
     background-image: linear-gradient(
       180deg,
@@ -747,5 +752,36 @@ body {
       #090b13 0%,
       rgba(9, 11, 19, 0.2) 100%
     );
+  }
+
+  .serv-pric-item-haircut::after {
+    width: 263px;
+  }
+  .serv-pric-item-beard::after {
+    width: 287px;
+  }
+
+  .serv-pric-item-mustache::after {
+    width: 254px;
+  }
+
+  .serv-pric-item-shave::after {
+    width: 206px;
+  }
+
+  .serv-pric-item-trainee::after {
+    width: 247px;
+  }
+
+  .serv-pric-item-nozzle::after {
+    width: 165px;
+  }
+
+  .serv-pric-item-children::after {
+    width: 137px;
+  }
+
+  .serv-pric-item-camouflage::after {
+    width: 172px;
   }
 }
