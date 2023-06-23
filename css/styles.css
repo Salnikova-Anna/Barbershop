@@ -186,6 +186,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     gap: 20px 0;
+    transform: translateY(20px);
   }
 
   .header-button-booking {
@@ -241,6 +242,10 @@ body {
   .navigation {
     gap: 0 107px;
   }
+
+  .phone-btn-booking-thumb {
+    transform: none;
+  }
 }
 
 /* ==========================HERO========================= */
@@ -263,7 +268,7 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.1px;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
@@ -303,9 +308,7 @@ body {
 
   .hero-container {
     padding-top: 272px;
-    /* padding-left: 250px; */
     display: flex;
-    justify-content: start;
     height: 680px;
     background-image: url("../images/hero-sec/tablet-img.jpg");
     background-size: 573px 680px;
@@ -317,7 +320,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0 40px;
-    /* transform: rotate(-90deg); */
+    transform: rotate(-90deg) translateX(-40px) translateY(-105px);
   }
 
   .hero-soc-list::before {
@@ -325,6 +328,17 @@ body {
     height: 1px;
     background-color: var(--title-black-color);
     content: "";
+  }
+
+  .hero-up-text {
+    letter-spacing: 0;
+  }
+
+  .hero-down-text {
+    max-width: 360px;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.36px;
   }
 
   .hero-soc-link {
@@ -340,24 +354,30 @@ body {
   .hero-soc-link:focus {
     color: #ff6c00;
   }
+
+  .hero-text-wrap {
+    transform: translateX(-80px);
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  /* .hero-section {
-    padding-top: 272px;
-    padding-bottom: 208px; */
-  /* padding-left: 215px; */
-  /* background-image: url("../images/hero-sec/desktop-img.jpg");
-    background-size: 1070px;
-    background-repeat: no-repeat;
-    background-position: right top;
-  } */
-
   .hero-container {
-    padding-left: 200px;
     background-image: url("../images/hero-sec/desktop-img.jpg");
     background-size: 1070px 680px;
     background-position: right top;
+  }
+
+  .hero-soc-list {
+    transform: rotate(-90deg) translateX(-40px) translateY(-100px);
+  }
+
+  .hero-text-wrap {
+    transform: translateX(-100px);
+  }
+
+  .hero-title {
+    font-size: 72px;
+    letter-spacing: 3.6px;
   }
 }
 
