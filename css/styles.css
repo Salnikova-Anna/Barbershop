@@ -792,9 +792,6 @@ body {
   padding-bottom: 84px;
 }
 
-.benefits-text-wrap {
-}
-
 .benefits-upper-text {
   display: flex;
   align-items: center;
@@ -829,34 +826,32 @@ body {
   color: #555555;
 }
 
-.benefits-list {
-  /* display: flex; */
-  /* justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px; */
-}
-
 .benefits-list-item {
   height: 133px;
   background-color: #f7f7f7;
 }
 
 .item-600 {
+  margin-bottom: 30px;
   width: 193px;
   padding: 20px 35px 20px 36px;
 }
 
 .item-50 {
-  width: 194px;
+  margin-bottom: 30px;
+  margin-left: auto;
   padding: 20px 36px;
+  width: 194px;
 }
 
 .item-20 {
+  margin-bottom: 30px;
   width: 193px;
   padding: 20px 35px 35px 36px;
 }
 
 .item-100 {
+  margin-left: auto;
   width: 194px;
   padding: 20px 32px;
 }
@@ -888,53 +883,97 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .benefits-title {
-    width: 418px;
+  .benefits {
+    padding-bottom: 114px;
   }
 
-  /* .benefits-list {
+  .benefits-title {
+    width: 419px;
+  }
+
+  .benefits-list {
     position: relative;
+  }
+
+  .item-20 {
+    margin-bottom: 0;
   }
 
   .item-50 {
     position: absolute;
-  } */
+    top: 30px;
+    left: 223px;
+    margin-bottom: 0;
+  }
+
+  .item-100 {
+    position: absolute;
+    left: 223px;
+    bottom: -30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .benefits {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
   }
 
   .benefits-title {
-    max-width: 449px;
+    width: 449px;
   }
 
   .benefits-bottom-text {
     width: 500px;
   }
 
+  .benefits-list {
+    width: 450px;
+    margin-left: auto;
+  }
+
   .benefits-list-item {
     width: 210px;
+  }
+
+  .item-50,
+  .item-100 {
+    left: 240px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 150px;
+  }
+
+  .benefits-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0 130px;
+    justify-content: start;
   }
 
   .benefits-title {
-    max-width: 431px;
+    width: 431px;
   }
 
   .benefits-bottom-text {
     margin-bottom: 0;
   }
 
+  .benefits-list {
+    width: 370px;
+    margin-left: 69px;
+  }
+
   .benefits-list-item {
     width: 170px;
+  }
+
+  .item-50,
+  .item-100 {
+    left: 200px;
   }
 }
