@@ -386,9 +386,11 @@ body {
   padding-top: 84px;
   padding-bottom: 84px;
 }
+
 .about-img-list {
   display: none;
 }
+
 .about-up-text {
   display: flex;
   align-items: center;
@@ -425,6 +427,9 @@ body {
   letter-spacing: 0.02em;
   color: #555555;
 }
+.about-word-definitely {
+  display: none;
+}
 
 .about-bottom-text {
   margin-bottom: 40px;
@@ -453,6 +458,84 @@ body {
 .about-button:focus {
   color: var(--white-color);
   background-color: #ff6c00;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about-container {
+    display: flex;
+    gap: 0 30px;
+  }
+
+  .about-img-list {
+    display: block;
+  }
+
+  .about-img-item {
+    flex-shrink: 0;
+  }
+
+  .about-img {
+    width: 330px;
+    height: 235px;
+  }
+
+  .about-img-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .about-text-wrap {
+    width: 330px;
+  }
+
+  .about-middle-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.36px;
+  }
+
+  .about-bottom-text {
+    margin-bottom: 77px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .about-img-list {
+    display: flex;
+    gap: 0 30px;
+  }
+
+  .about-img {
+    width: 270px;
+    height: 445px;
+  }
+
+  .about-text-wrap {
+    width: 470px;
+  }
+
+  .about-title {
+    width: initial;
+    font-size: 42px;
+    letter-spacing: 2.1px;
+  }
+
+  .about-word-definitely {
+    display: inline-block;
+  }
+
+  .about-bottom-text {
+    margin-bottom: 42px;
+  }
 }
 
 /* ==========================SERVICES-PRICES========================= */
@@ -1004,5 +1087,153 @@ body {
   .item-50,
   .item-100 {
     left: 200px;
+  }
+}
+
+/* ==========================OUR BARBERS========================= */
+.our-barbers {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #f7f7f7;
+}
+
+.our-barbers-container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.our-barbers-up-text {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  margin-bottom: 20px;
+  color: var(--title-black-color);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.our-barbers-title {
+  margin-bottom: 44px;
+  color: var(--title-black-color);
+  font-size: 42px;
+  font-family: var(--title-font);
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
+.our-barbers-up-text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--title-black-color);
+}
+
+.our-barbers-list-item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.our-barbers-list-img {
+  margin-bottom: 30px;
+}
+
+.our-barbers-list-name {
+  margin-bottom: 8px;
+  color: var(--title-black-color);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.our-barbers-list-position {
+  margin-bottom: 30px;
+  color: #ff6c00;
+  text-align: center;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.our-barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 0 10px;
+}
+
+.our-barbers-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--title-black-color);
+  background-color: var(--white-color);
+  transition: color var(--transition-dur-func);
+}
+
+.our-barbers-soc-link:hover,
+.our-barbers-soc-link:focus {
+  color: #ff6c00;
+}
+
+.our-barbers-soc-icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 480px) {
+  .our-barbers-container {
+    width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-barbers-container {
+    width: 768px;
+    padding-left: 159px;
+    padding-right: 159px;
+  }
+
+  .our-barbers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .our-barbers-list-img {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .our-barbers-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .our-barbers-list {
+    display: flex;
+    gap: 0 30px;
+  }
+
+  .our-barbers-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .our-barbers-list-img {
+    width: 370px;
   }
 }
