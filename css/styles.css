@@ -1237,3 +1237,236 @@ body {
     width: 370px;
   }
 }
+
+/* ==========================GALLERY========================= */
+.gallery {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.gallery-up-text {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  margin-bottom: 71px;
+  color: var(--title-black-color);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.gallery-up-text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--title-black-color);
+}
+
+.gallery-list {
+  display: flex;
+  gap: 30px 0;
+  flex-direction: column;
+}
+
+.gallery-list-item:nth-child(2) {
+  order: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .gallery-up-text {
+    margin-bottom: 44px;
+  }
+
+  .gallery-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+  }
+
+  .gallery-list-item:nth-child(2) {
+    order: 0;
+  }
+
+  .gallery-list-image {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .gallery-list-image {
+    width: 270px;
+  }
+}
+
+/* ==========================BOOKING========================= */
+.online-booking {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #191c26;
+}
+
+.booking-title {
+  color: var(--white-color);
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 34px;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  margin-bottom: 44px;
+}
+
+.booking-form-input {
+  display: block;
+  width: 290px;
+  padding: 0 0 8px;
+  margin-bottom: 44px;
+  color: var(--white-color);
+  background-color: transparent;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(157, 164, 189, 0.4);
+  transition: border-bottom-color var(--transition-dur-func);
+}
+
+.booking-form-input:hover,
+.booking-form-input:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.booking-form-input::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  transition: color var(--transition-dur-func);
+}
+
+.booking-form-input:hover::placeholder,
+.booking-form-input:focus::placeholder {
+  color: #ffffff;
+}
+
+.booking-message {
+  height: 70px;
+  resize: none;
+}
+
+.booking-button {
+  display: block;
+  width: 160px;
+  height: 40px;
+  padding: 0;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
+  background-color: transparent;
+  transition: background-color var(--transition-dur-func);
+}
+
+.booking-button:hover,
+.booking-button:focus {
+  background-color: #ff6c00;
+}
+
+@media screen and (min-width: 480px) {
+  .booking-title {
+    font-size: 42px;
+  }
+
+  .booking-form-input {
+    width: 418px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .online-booking {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .booking-title {
+    text-align: start;
+  }
+
+  .booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 30px;
+  }
+
+  .booking-form-input {
+    width: 330px;
+  }
+
+  .booking-message {
+    width: 690px;
+  }
+
+  .booking-button {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .online-booking {
+    padding-top: 130px;
+    padding-bottom: 174px;
+  }
+
+  .booking-contacts-wrap {
+  }
+
+  .booking-form-input {
+  }
+
+  .booking-message {
+  }
+
+  .booking-button {
+  }
+}
+
+/* ==========================CONTACTS========================= */
+.contacts {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #191c26;
+  background-image: url(../images/contacts/mobile.png);
+}
+
+.contacts-title {
+}
+.address {
+}
+.address-list {
+}
+.list {
+}
+.address-list-item {
+}
+.work-hours-title {
+}
+.work-hours-text {
+}

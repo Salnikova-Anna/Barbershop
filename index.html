@@ -499,56 +499,307 @@
       </section>
       <section class="gallery">
         <div class="container">
-          <p>In Latin, "barba" means "beard"</p>
-          <ul>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
+          <p class="gallery-up-text">In Latin, "barba" means "beard"</p>
+          <ul class="gallery-list list">
+            <li class="gallery-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img-1-decktop-1x.webp 1x,
+                    ./images/gallery/img-1-decktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-decktop-1x.jpg 1x,
+                    ./images/gallery/img-1-decktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-tablet-1x.webp 1x,
+                    ./images/gallery/img-1-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-tablet-1x.jpg 1x,
+                    ./images/gallery/img-1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-mobile-1x.webp 1x,
+                    ./images/gallery/img-1-mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-1-mobile-1x.jpg 1x,
+                    ./images/gallery/img-1-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery/img-1-mobile-1x.jpg"
+                  alt="A hair cutting process in barbershop"
+                  width="418"
+                  height="360"
+                  class="gallery-list-image"
+                />
+              </picture>
+            </li>
+            <li class="gallery-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img-2-decktop-1x.webp 1x,
+                    ./images/gallery/img-2-decktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-decktop-1x.jpg 1x,
+                    ./images/gallery/img-2-decktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-tablet-1x.webp 1x,
+                    ./images/gallery/img-2-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-tablet-1x.jpg 1x,
+                    ./images/gallery/img-2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-mobile-1x.webp 1x,
+                    ./images/gallery/img-2-mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-2-mobile-1x.jpg 1x,
+                    ./images/gallery/img-2-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery/img-2-mobile-1x.jpg"
+                  alt="A shaving process in barbershop"
+                  width="418"
+                  height="360"
+                  class="gallery-list-image"
+                />
+              </picture>
+            </li>
+            <li class="gallery-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img-3-decktop-1x.webp 1x,
+                    ./images/gallery/img-3-decktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-decktop-1x.jpg 1x,
+                    ./images/gallery/img-3-decktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-tablet-1x.webp 1x,
+                    ./images/gallery/img-3-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-tablet-1x.jpg 1x,
+                    ./images/gallery/img-3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-mobile-1x.webp 1x,
+                    ./images/gallery/img-3-mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-3-mobile-1x.jpg 1x,
+                    ./images/gallery/img-3-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery/img-3-mobile-1x.jpg"
+                  alt="A facial steaming process in barbershop"
+                  width="418"
+                  height="360"
+                  class="gallery-list-image"
+                />
+              </picture>
+            </li>
+            <li class="gallery-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/img-4-decktop-1x.webp 1x,
+                    ./images/gallery/img-4-decktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-decktop-1x.jpg 1x,
+                    ./images/gallery/img-4-decktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-tablet-1x.webp 1x,
+                    ./images/gallery/img-4-tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-tablet-1x.jpg 1x,
+                    ./images/gallery/img-4-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-mobile-1x.webp 1x,
+                    ./images/gallery/img-4-mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/img-4-mobile-1x.jpg 1x,
+                    ./images/gallery/img-4-mobile-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/gallery/img-4-mobile-1x.jpg"
+                  alt="A neck shaving process in barbershop"
+                  width="418"
+                  height="360"
+                  class="gallery-list-image"
+                />
+              </picture>
+            </li>
           </ul>
         </div>
       </section>
-      <section class="online-booking">
-        <div class="container">
-          <h2>Online-booking</h2>
-          <button type="submit">send</button>
-        </div>
-      </section>
-      <section class="contacts" id="contacts">
-        <div class="container">
-          <h2>Contacts</h2>
-          <address>
-            <ul>
-              <li>
-                <a href="">
-                  <svg>
-                    <use></use>
-                  </svg>
-                  st. Vasilkivska, 7A Kyiv, 08132
-                </a>
-              </li>
-              <li>
-                <a href="tel:+38 044 111 11 11">
-                  <svg>
-                    <use></use>
-                  </svg>
-                  +38 044 111 11 11
-                </a>
-              </li>
-              <li>
-                <a href="mailto:barbershop@email.com">
-                  <svg>
-                    <use></use>
-                  </svg>
-                  barbershop@email.com
-                </a>
-              </li>
-            </ul>
-          </address>
-          <h3>Working hours</h3>
-          <p>Every day from 9:00 to 22:00</p>
-        </div>
-      </section>
+      <div class="booking-contacts-wrap">
+        <section class="online-booking">
+          <div class="container booking-container">
+            <h2 class="booking-title">Online-booking</h2>
+            <form class="booking-form">
+              <label class="booking-name">
+                <input
+                  class="booking-form-input"
+                  type="text"
+                  name="user-name"
+                  placeholder="name*"
+                  required
+                  pattern="[a-zA-Zа-яА-Я]+"
+                  minlength="2"
+                />
+              </label>
+              <label class="booking-phone">
+                <input
+                  class="booking-form-input"
+                  type="tel"
+                  name="user-phone"
+                  placeholder="phone*"
+                  required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="111-111-11-11"
+                />
+              </label>
+              <textarea
+                class="booking-form-input booking-message"
+                name="message"
+                placeholder="message"
+              ></textarea>
+              <button class="booking-button" type="submit">send</button>
+            </form>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="container">
+            <h2 class="contacts-title">Contacts</h2>
+            <address class="address">
+              <ul class="address-list list">
+                <li class="address-list-item">
+                  <a href="">
+                    <svg class="address-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-map-pin"></use>
+                    </svg>
+                    st. Vasilkivska, 7A Kyiv, 08132
+                  </a>
+                </li>
+                <li class="address-list-item">
+                  <a href="tel:+38 044 111 11 11">
+                    <svg class="address-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11
+                  </a>
+                </li>
+                <li class="address-list-item">
+                  <a href="mailto:barbershop@email.com">
+                    <svg class="address-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <h3 class="work-hours-title">Working hours</h3>
+            <p class="work-hours-text">Every day from 9:00 to 22:00</p>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="container">
