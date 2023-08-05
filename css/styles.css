@@ -1416,6 +1416,11 @@ body {
     gap: 0 30px;
   }
 
+  .inputs-wrap {
+    display: flex;
+    gap: 0 30px;
+  }
+
   .booking-form-input {
     width: 330px;
   }
@@ -1430,21 +1435,27 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .online-booking {
-    padding-top: 130px;
-    padding-bottom: 174px;
+  .booking-contacts-wrap {
+    display: flex;
   }
 
-  .booking-contacts-wrap {
+  .online-booking {
+    width: 570px;
+    padding-top: 130px;
+    padding-bottom: 183px;
+  }
+
+  .booking-form {
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 
   .booking-form-input {
+    width: 270px;
   }
 
   .booking-message {
-  }
-
-  .booking-button {
+    width: 570px;
   }
 }
 
@@ -1454,19 +1465,190 @@ body {
   padding-bottom: 84px;
   background-color: #191c26;
   background-image: url(../images/contacts/mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts-title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 42px;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  color: var(--white-color);
 }
 .address {
+  margin-bottom: 44px;
 }
-.address-list {
+
+.address-map-link {
+  display: flex;
+  gap: 0 16px;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+  color: #9da4bd;
 }
-.list {
+
+.address-list-item:not(:last-child) {
+  margin-bottom: 20px;
 }
-.address-list-item {
+
+.address-phone-link {
+  display: flex;
+  gap: 0 16px;
+  align-items: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+  color: #9da4bd;
 }
+
+.address-mail-link {
+  display: flex;
+  gap: 0 16px;
+  align-items: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+  text-decoration-line: underline;
+  color: #9da4bd;
+}
+
 .work-hours-title {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
+
+.work-hours-title::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #9da4bd66;
+}
+
 .work-hours-text {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+  color: #9da4bd;
+}
+
+@media screen and (min-width: 480px) {
+  .address-map-link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contacts-hours-wrap {
+    display: flex;
+    gap: 0 130px;
+  }
+
+  .contacts-title {
+    text-align: start;
+    margin-bottom: 40px;
+  }
+
+  .address-map-link {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    width: 600px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .contacts-hours-wrap {
+    display: block;
+  }
+
+  .address {
+    margin-bottom: 70px;
+  }
+}
+
+/* ==========================FOOTER========================= */
+.footer-section {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px 0;
+  align-items: flex-end;
+}
+.copyright-text {
+  align-self: start;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  color: #9da4bd;
+}
+
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+
+.footer-soc-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.footer-soc-link {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  color: #303030;
+  transition: color var(--transition-dur-func);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  color: #ff6c00;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
