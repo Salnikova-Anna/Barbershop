@@ -17,6 +17,10 @@ html {
   ); */
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 /* body {
   background-image: repeating-linear-gradient(
     to right,
@@ -154,7 +158,7 @@ body {
   fill: var(--white-color);
 }
 
-.burger-menu-button {
+.burger-menu-open-button {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -225,7 +229,7 @@ body {
     background-color: #ff6c00;
   }
 
-  .burger-menu-button {
+  .burger-menu-open-button {
     display: none;
   }
 }
@@ -262,6 +266,171 @@ body {
 
   .phone-btn-booking-thumb {
     transform: none;
+  }
+}
+
+/* ==========================BURGER-MENU========================= */
+
+.burger-menu {
+  position: fixed;
+  width: 70%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0.1) 50px,
+    #ffffff 50px,
+    #ffffff 82px
+  );
+}
+
+.burger-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.burger-menu-container {
+  position: relative;
+  width: 224px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-left: 40px;
+  padding-right: 15px;
+}
+
+.burger-menu-close-btn {
+  position: absolute;
+  top: 48px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.burger-menu-nav-list {
+  margin-bottom: 64px;
+}
+
+.burger-menu-soc-nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  color: var(--title-black-color);
+  transition: color var(--transition-dur-func);
+}
+
+.burger-menu-nav-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.burger-menu-soc-nav-link:hover,
+.burger-menu-soc-nav-link:focus {
+  color: #ff6c00;
+}
+
+.burger-menu-phone {
+  display: block;
+  margin-bottom: 19px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+  transition: color var(--transition-dur-func);
+}
+
+.burger-menu-phone:hover,
+.burger-menu-phone:focus {
+  color: #ff6c00;
+}
+
+.burger-menu-booking-btn {
+  padding: 12px 20px;
+  margin-bottom: 69px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  color: var(--title-black-color);
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
+  transition: color var(--transition-dur-func),
+    background-color var(--transition-dur-func);
+}
+
+.burger-menu-booking-btn:hover,
+.burger-menu-booking-btn:focus {
+  background-color: #ff6c00;
+  color: #ffffff;
+}
+
+.burger-menu-soc-list {
+  display: flex;
+  gap: 24px 10px;
+
+  align-items: center;
+}
+
+.burger-menu-soc-list::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--title-black-color);
+  transform: translateY(-20px);
+}
+
+.burger-menu-soc-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.burger-menu-soc-link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  color: var(--title-black-color);
+}
+
+@media screen and (min-width: 480px) {
+  .burger-menu-container {
+    width: 336px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  .burger-menu-close-btn {
+    right: 31px;
+  }
+
+  .burger-menu-soc-nav-link {
+    font-size: 18px;
+  }
+
+  .burger-menu-phone {
+    font-size: 18px;
+  }
+
+  .burger-menu-booking-btn {
+    padding: 12px 37px;
+  }
+
+  .burger-menu-soc-list {
+    gap: 24px 40px;
   }
 }
 
@@ -1465,8 +1634,8 @@ body {
       "../images/contacts/contacts-bg-desktop-2x.png" type("image/png") 2x
     );
     background-repeat: no-repeat;
-    background-position: 90%;
-    background-size: 590px 625px;
+    background-position: 100%;
+    /* background-size: 590px 625px; */
     /* background-size: contain; */
   }
 
@@ -1501,7 +1670,12 @@ body {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: #191c26;
-  background-image: url(../images/contacts/mobile.png);
+  background-image: image-set(
+    "../images/contacts/contacts-bg-mobile-1x.webp" type("image/webp") 1x,
+    "../images/contacts/contacts-bg-mobile-2x.webp" type("image/webp") 2x,
+    "../images/contacts/contacts-bg-mobile-1x.png" type("image/png") 1x,
+    "../images/contacts/contacts-bg-mobile-2x.png" type("image/png") 2x
+  );
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1598,6 +1772,12 @@ body {
   .contacts {
     padding-top: 100px;
     padding-bottom: 100px;
+    background-image: image-set(
+      "../images/contacts/contacts-bg-tablet-1x.webp" type("image/webp") 1x,
+      "../images/contacts/contacts-bg-tablet-2x.webp" type("image/webp") 2x,
+      "../images/contacts/contacts-bg-tablet-1x.png" type("image/png") 1x,
+      "../images/contacts/contacts-bg-tablet-2x.png" type("image/png") 2x
+    );
   }
 
   .contacts-hours-wrap {

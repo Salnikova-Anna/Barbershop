@@ -53,11 +53,66 @@
             Online-booking
           </button>
         </div>
-        <button class="burger-menu-button" type="button">
+        <button class="burger-menu-open-button" type="button">
           <svg class="burger-menu-icon" width="40" height="40">
             <use href="./images/icons.svg#burger-menu-icon"></use>
           </svg>
         </button>
+      </div>
+      <div class="burger-menu is-hidden">
+        <div class="burger-menu-container">
+          <button type="button" class="burger-menu-close-btn">
+            <svg class="burger-menu-icon-close" width="40" height="40">
+              <use href="./images/icons.svg#burger-menu-icon-close"></use>
+            </svg>
+          </button>
+          <ul class="burger-menu-nav-list list">
+            <li class="burger-menu-nav-item">
+              <a href="#about" class="burger-menu-soc-nav-link">About</a>
+            </li>
+            <li class="burger-menu-nav-item">
+              <a href="#services-prices" class="burger-menu-soc-nav-link"
+                >Services and prices</a
+              >
+            </li>
+            <li class="burger-menu-nav-item">
+              <a href="#barbers" class="burger-menu-soc-nav-link">Barbers</a>
+            </li>
+            <li class="burger-menu-nav-item">
+              <a href="#contacts" class="burger-menu-soc-nav-link">Contacts</a>
+            </li>
+          </ul>
+          <a href="tel:+380441111111" class="burger-menu-phone"
+            >+38 044 111 11 11</a
+          >
+          <button type="button" class="burger-menu-booking-btn">
+            online-booking
+          </button>
+          <ul class="burger-menu-soc-list list">
+            <div>
+              <li class="burger-menu-soc-item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram link"
+                  class="burger-menu-soc-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="burger-menu-soc-item">
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Youtube link"
+                  class="burger-menu-soc-link"
+                  >Youtube</a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -818,7 +873,7 @@
     </main>
     <footer class="footer-section">
       <div class="container footer-container">
-        <p class="copyright-text">&#xa9; Copyright 2020</p>
+        <p class="copyright-text">&#xa9; Copyright 2023</p>
         <ul class="footer-soc-list list">
           <li class="footer-soc-item">
             <a
@@ -843,5 +898,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/burger-menu.js" type="module"></script>
   </body>
 </html>
