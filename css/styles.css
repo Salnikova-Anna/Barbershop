@@ -273,7 +273,7 @@ body {
 
 .burger-menu {
   position: fixed;
-  width: 70%;
+  width: 0;
   height: 100%;
   z-index: 100;
   top: 0;
@@ -286,12 +286,11 @@ body {
     #ffffff 50px,
     #ffffff 82px
   );
+  transition: width 500ms;
 }
 
-.burger-menu.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.burger-menu.is-shown {
+  width: 70%;
 }
 
 .burger-menu-container {
