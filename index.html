@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -148,7 +149,12 @@
           </div>
         </div>
       </section>
-      <section class="about-section" id="about">
+      <section
+        class="about-section"
+        id="about"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div class="container about-container">
           <ul class="about-img-list list">
             <li class="about-img-item">
@@ -257,7 +263,11 @@
           <p class="serv-pric-text">Spend your time with the best masters</p>
           <h2 class="serv-pric-title">Services and prices</h2>
           <div class="serv-pric-list-wrap">
-            <ul class="serv-pric-list list">
+            <ul
+              class="serv-pric-list list"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
               <li class="serv-pric-item">
                 <p class="serv-pric-item-haircut">Men's haircut</p>
                 <p class="serv-pric-item-price">from 300 uah.</p>
@@ -275,7 +285,11 @@
                 <p class="serv-pric-item-price">from 200 uah.</p>
               </li>
             </ul>
-            <ul class="serv-pric-list list">
+            <ul
+              class="serv-pric-list list"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            >
               <li class="serv-pric-item">
                 <p class="serv-pric-item-trainee">Trainee's haircut</p>
                 <p class="serv-pric-item-price">from 50 uah.</p>
@@ -299,7 +313,7 @@
           <a href="#booking" class="serv-pric-button">Online-booking</a>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits" data-aos="fade-up" data-aos-duration="3000">
         <div class="container benefits-container">
           <div class="benefits-text-wrap">
             <p class="benefits-upper-text">Old traditional school</p>
@@ -329,7 +343,12 @@
           </ul>
         </div>
       </section>
-      <section class="our-barbers" id="barbers">
+      <section
+        class="our-barbers"
+        id="barbers"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div class="our-barbers-container">
           <p class="our-barbers-up-text">For true enjoyers of the atmosphere</p>
           <h2 class="our-barbers-title">Our barbers</h2>
@@ -554,7 +573,11 @@
         <div class="container">
           <p class="gallery-up-text">In Latin, "barba" means "beard"</p>
           <ul class="gallery-list list">
-            <li class="gallery-list-item">
+            <li
+              class="gallery-list-item"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+            >
               <picture>
                 <source
                   srcset="
@@ -610,7 +633,11 @@
                 />
               </picture>
             </li>
-            <li class="gallery-list-item">
+            <li
+              class="gallery-list-item"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+            >
               <picture>
                 <source
                   srcset="
@@ -666,7 +693,11 @@
                 />
               </picture>
             </li>
-            <li class="gallery-list-item">
+            <li
+              class="gallery-list-item"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+            >
               <picture>
                 <source
                   srcset="
@@ -722,7 +753,11 @@
                 />
               </picture>
             </li>
-            <li class="gallery-list-item">
+            <li
+              class="gallery-list-item"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+            >
               <picture>
                 <source
                   srcset="
@@ -896,6 +931,10 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/burger-menu.js" type="module"></script>
   </body>
 </html>

@@ -8,28 +8,22 @@
 
 html {
   scroll-behavior: smooth;
-  /* background-image: repeating-linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0.1),
-    rgba(255, 0, 0, 0.1) 30px,
-    #ffffff 30px,
-    #ffffff 82px
-  ); */
 }
 
 .no-scroll {
   overflow-y: hidden;
 }
 
-/* body {
+body {
+  font-family: var(--main-font);
   background-image: repeating-linear-gradient(
     to right,
     rgba(255, 0, 0, 0.1),
-    rgba(255, 0, 0, 0.1) 30px,
-    #ffffff 30px,
+    rgba(255, 0, 0, 0.1) 50px,
+    #ffffff 50px,
     #ffffff 82px
   );
-} */
+}
 
 h1,
 h2,
@@ -87,19 +81,10 @@ img {
 
 .container {
   width: 320px;
-  /* width: 100%; */
-  /* margin: 0 auto; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* background-image: repeating-linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0.1),
-    rgba(255, 0, 0, 0.1) 30px,
-    #ffffff 30px,
-    #ffffff 82px
-  ); */
 }
 
 @media screen and (min-width: 480px) {
@@ -124,17 +109,6 @@ img {
     padding-left: 15px;
     padding-right: 15px;
   }
-}
-
-body {
-  font-family: var(--main-font);
-  /* background-image: repeating-linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0.1),
-    rgba(255, 0, 0, 0.1) 30px,
-    #ffffff 30px,
-    #ffffff 82px
-  ); */
 }
 
 /* ==========================HEADER========================= */
@@ -441,7 +415,7 @@ body {
   padding-bottom: 209px;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: changeBgImageMob 20s ease-in-out infinite;
+  animation: changeBgImageMob 16s ease-in-out infinite;
 }
 
 @keyframes changeBgImageMob {
@@ -515,7 +489,7 @@ body {
     background-size: 573px 680px;
     background-repeat: no-repeat;
     background-position: right 39px top;
-    animation: changeBgImageTab 20s ease-in-out infinite;
+    animation: changeBgImageTab 16s ease-in-out infinite;
   }
 
   @keyframes changeBgImageTab {
@@ -581,7 +555,7 @@ body {
   .hero-container {
     background-size: 1070px 680px;
     background-position: right top;
-    animation: changeBgImageDesk 20s ease-in-out infinite;
+    animation: changeBgImageDesk 16s ease-in-out infinite;
   }
 
   @keyframes changeBgImageDesk {
@@ -850,53 +824,10 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
-/* 
-.serv-pric-item-haircut::after,
-.serv-pric-item-beard::after,
-.serv-pric-item-mustache::after,
-.serv-pric-item-shave::after,
-.serv-pric-item-trainee::after,
-.serv-pric-item-nozzle::after,
-.serv-pric-item-children::after,
-.serv-pric-item-camouflage::after {
-  align-self: flex-end;
-  margin-left: 5px;
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
-  content: "";
-} */
-
-/* .serv-pric-item-haircut::after {
-  width: 75px;
-}
-
-.serv-pric-item-beard::after {
-  width: 95px;
-}
-
-.serv-pric-item-mustache::after {
-  width: 69px;
-}
-
-.serv-pric-item-shave::after {
-  width: 32px;
-}
-
-.serv-pric-item-trainee::after {
-  width: 63px;
-}
-
-.serv-pric-item-children::after {
-  width: 5px;
-}
-
-.serv-pric-item-camouflage::after {
-  width: 7px;
-} */
 
 .serv-pric-button {
   display: block;
-  width: 162px;
+  width: 164px;
   margin: 0 auto;
   padding: 12px 20px;
   font-weight: 600;
@@ -1174,7 +1105,7 @@ body {
 
 .benefits-list-item {
   height: 133px;
-  background-color: #f7f7f7;
+  background-color: rgba(247, 247, 247, 0.6);
 }
 
 .item-600 {
@@ -1328,7 +1259,7 @@ body {
 .our-barbers {
   padding-top: 84px;
   padding-bottom: 84px;
-  background-color: #f7f7f7;
+  background-color: rgba(247, 247, 247, 0.6);
 }
 
 .our-barbers-container {
@@ -1672,23 +1603,11 @@ body {
   .booking-contacts-wrap {
     display: flex;
     justify-content: center;
-    gap: 0 130px;
-    padding: 130px 0 111px 15px;
     background-color: #191c26;
-    background-image: image-set(
-      "../images/contacts/contacts-bg-desktop-1x.webp" type("image/webp") 1x,
-      "../images/contacts/contacts-bg-desktop-2x.webp" type("image/webp") 2x,
-      "../images/contacts/contacts-bg-desktop-1x.png" type("image/png") 1x,
-      "../images/contacts/contacts-bg-desktop-2x.png" type("image/png") 2x
-    );
-    background-repeat: no-repeat;
-    background-position: 100%;
-    /* background-size: 590px 625px; */
-    /* background-size: contain; */
   }
 
   .online-booking {
-    padding-top: 0;
+    padding-top: 130px;
     padding-bottom: 0;
     background-color: transparent;
   }
@@ -1751,6 +1670,12 @@ body {
   line-height: 1.67;
   letter-spacing: 0.36px;
   color: #9da4bd;
+  transition: color var(--transition-dur-func);
+}
+
+.address-map-link:hover,
+.address-map-link:focus {
+  color: #ff6c00;
 }
 
 .address-list-item:not(:last-child) {
@@ -1767,6 +1692,12 @@ body {
   line-height: 1.67;
   letter-spacing: 0.36px;
   color: #9da4bd;
+  transition: color var(--transition-dur-func);
+}
+
+.address-phone-link:hover,
+.address-phone-link:focus {
+  color: #ff6c00;
 }
 
 .address-mail-link {
@@ -1780,6 +1711,12 @@ body {
   letter-spacing: 0.36px;
   text-decoration-line: underline;
   color: #9da4bd;
+  transition: color var(--transition-dur-func);
+}
+
+.address-mail-link:hover,
+.address-mail-link:focus {
+  color: #ff6c00;
 }
 
 .work-hours-title {
@@ -1845,10 +1782,17 @@ body {
 
 @media screen and (min-width: 1200px) {
   .contacts {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-image: none;
+    padding-top: 130px;
+    padding-bottom: 111px;
+    padding-left: 130px;
     background-color: transparent;
+    background-image: image-set(
+      "../images/contacts/contacts-bg-desktop-1x.webp" type("image/webp") 1x,
+      "../images/contacts/contacts-bg-desktop-2x.webp" type("image/webp") 2x,
+      "../images/contacts/contacts-bg-desktop-1x.png" type("image/png") 1x,
+      "../images/contacts/contacts-bg-desktop-2x.png" type("image/png") 2x
+    );
+    background-repeat: no-repeat;
   }
 
   .contacts-container {

@@ -4,10 +4,15 @@ const refs = {
   burgerMenu: document.querySelector(".burger-menu"),
   navLinks: document.querySelectorAll(".burger-menu-soc-nav-link"),
   BgMenuBookLink: document.querySelector(".burger-menu-booking-link"),
+  sections: document.querySelectorAll("section"),
 };
 
 [...refs.navLinks].map((link) =>
   link.addEventListener("click", handleCloseMenuClick)
+);
+
+[...refs.sections].map((section) =>
+  section.addEventListener("click", handleCloseMenuClick)
 );
 
 refs.bgMenuOpenBtn.addEventListener("click", handleOpenMenuClick);
@@ -19,7 +24,7 @@ function handleOpenMenuClick() {
   document.body.classList.add("no-scroll");
 }
 
-function handleCloseMenuClick() {
+function handleCloseMenuClick(event) {
   refs.burgerMenu.classList.remove("is-shown");
   document.body.classList.remove("no-scroll");
 }
