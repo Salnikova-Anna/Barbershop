@@ -353,7 +353,8 @@ body {
   color: #ff6c00;
 }
 
-.burger-menu-booking-btn {
+.burger-menu-booking-link {
+  display: inline-block;
   padding: 12px 20px;
   margin-bottom: 69px;
   font-size: 12px;
@@ -370,8 +371,8 @@ body {
     background-color var(--transition-dur-func);
 }
 
-.burger-menu-booking-btn:hover,
-.burger-menu-booking-btn:focus {
+.burger-menu-booking-link:hover,
+.burger-menu-booking-link:focus {
   background-color: #ff6c00;
   color: #ffffff;
 }
@@ -438,9 +439,24 @@ body {
 .hero-section {
   padding-top: 208px;
   padding-bottom: 209px;
-  background-image: url("../images/hero-sec/mob-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  animation: changeBgImageMob 20s ease-in-out infinite;
+}
+
+@keyframes changeBgImageMob {
+  0%,
+  100% {
+    background-image: url(../images/hero-sec/hero-mobile-1.png);
+  }
+
+  35% {
+    background-image: url(../images/hero-sec/hero-mobile-2.png);
+  }
+
+  70% {
+    background-image: url(../images/hero-sec/hero-mobile-3.png);
+  }
 }
 
 .hero-soc-list {
@@ -489,16 +505,32 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     background-image: none;
+    animation: none;
   }
 
   .hero-container {
     padding-top: 272px;
     display: flex;
     height: 680px;
-    background-image: url("../images/hero-sec/tablet-img.jpg");
     background-size: 573px 680px;
     background-repeat: no-repeat;
     background-position: right 39px top;
+    animation: changeBgImageTab 20s ease-in-out infinite;
+  }
+
+  @keyframes changeBgImageTab {
+    0%,
+    100% {
+      background-image: url(../images/hero-sec/hero-tablet-1.png);
+    }
+
+    35% {
+      background-image: url(../images/hero-sec/hero-tablet-2.png);
+    }
+
+    70% {
+      background-image: url(../images/hero-sec/hero-tablet-3.png);
+    }
   }
 
   .hero-soc-list {
@@ -547,9 +579,24 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero-container {
-    background-image: url("../images/hero-sec/desktop-img.jpg");
     background-size: 1070px 680px;
     background-position: right top;
+    animation: changeBgImageDesk 20s ease-in-out infinite;
+  }
+
+  @keyframes changeBgImageDesk {
+    0%,
+    100% {
+      background-image: url(../images/hero-sec/hero-decktop-1.png);
+    }
+
+    35% {
+      background-image: url(../images/hero-sec/hero-decktop-2.png);
+    }
+
+    70% {
+      background-image: url(../images/hero-sec/hero-decktop-3.png);
+    }
   }
 
   .hero-soc-list {
@@ -849,6 +896,7 @@ body {
 
 .serv-pric-button {
   display: block;
+  width: 162px;
   margin: 0 auto;
   padding: 12px 20px;
   font-weight: 600;
@@ -856,6 +904,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #ff6c00;
